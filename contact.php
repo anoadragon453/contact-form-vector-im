@@ -55,5 +55,5 @@ $subject = 'Contact form submission from ' . $name . ' (' . $from_email . ')';
 // Send the email
 mail($to_email, $subject, $enquiry, $headers);
 http_response_code(200);
-die('Success');
+die('success');
 ?>

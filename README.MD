@@ -20,3 +20,9 @@ To: to_name <$to_email>
 Ensure you have `sendmail` set up correctly on your server and that PHP is able to use it.
 
 Requires PHP 5+.
+
+## Usage
+
+`contact.php` accepts `POST` requires with the query parameters `name`, `email` and `enquiry`.
+
+A `400` is returned if missing query parameters, a `500` is returned if missing config values, and a `200` with message `success` is returned on success.
